@@ -1,0 +1,32 @@
+<div class="container rounded-xl bg-white mt-4 py-3">
+  <%= for listing <- @listings do %>
+    <div class="<%= if listing.discarded, do: "opacity-50", else: "" %> hover:bg-blue-100 hover:bg-opacity-50 px-3 py-4 text-gray-900 flex items-center">
+      <div>
+        <div class="w-20">
+          <img src="<%= listing.image_url %>" class="rounded-xl" />
+        </div>
+      </div>
+      <div class="ml-4 flex-grow">
+        <span class="block text-lg font-semibold"><%= listing.description %></span>
+        <span class="text-sm text-blue-700 font-medium"><%= listing.agent %></span>
+        <button
+          type="button"
+          phx-click="toggle_discarded"
+          phx-value-listing-id="<%= listing.id %>"
+          title="<%= if listing.discarded, do: "Send back to the list", else: "Naaaaa, discard!" %>"
+        >
+          <%= if listing.discarded, do: "👆", else: "👇" %>
+        </button>
+      </div>
+      <div>
+        <a
+          href="<%= listing.listing_url %>"
+          class="rounded-lg border border-blue-600 px-3 py-2 text-sm bg-white text-blue-600 font-medium hover:bg-gray-100 transform duration-100"
+          target="_blank"
+        >
+           🔗 More Details
+        </a>
+      </div>
+    </div>
+  <% end %>
+</div>
