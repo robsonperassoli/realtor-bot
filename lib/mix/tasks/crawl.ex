@@ -6,6 +6,8 @@ defmodule Mix.Tasks.Crawl do
 
   @impl Mix.Task
   def run(_args) do
+    {:ok, _started} = Application.ensure_all_started(:realtor_bot)
+
     RealtorBot.Crawler.start()
   end
 end
