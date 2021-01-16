@@ -15,7 +15,7 @@ config :realtor_bot, RealtorBotWeb.Endpoint,
   ],
   url: [scheme: "https", host: "desolate-escarpment-68341.herokuapp.com", port: 443],
   cache_static_manifest: "priv/static/cache_manifest.json",
-  force_ssl: [rewrite_on: [:x_forwarded_proto]],
+  force_ssl: [rewrite_on: [:x_forwarded_proto]]
 
 # Do not print debug messages in production
 config :logger, level: :info
