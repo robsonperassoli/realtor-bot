@@ -37,7 +37,7 @@ defmodule RealtorBot.Crawler.Simob do
       id: "imobiliariafacilsmo.com.br",
       api_domain: "simob.com.br",
       token: "ade9126003d71320146a0700b1a62a31",
-      category_id: nil
+      category_id: 7555
     }
   ]
 

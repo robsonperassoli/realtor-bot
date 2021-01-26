@@ -4,7 +4,6 @@ defmodule RealtorBot.Crawler do
   # TODO: http://imoveisteia.com.br/pt/pesquisa/real_estate_type:house
   # TODO: imobiliaria stapasson
   # TODO: https://www.imoveisbof.com.br/produto/chacaras-rurais-6/0/cod-065-belissima-chacara-com-casa-65
-  # TODO: https://www.securityimoveis.com.br/imovel/404/chale
   # TODO: http://www.imobiliariadavenir.com.br/imoveis/?search-term=1
   # SIMOB
 
