@@ -38,6 +38,12 @@ defmodule RealtorBot.Crawler.Simob do
       api_domain: "simob.com.br",
       token: "ade9126003d71320146a0700b1a62a31",
       category_id: 7555
+    },
+    %SimobConfig{
+      id: "imobiliariadavenir.com.br",
+      api_domain: "simob.com.br",
+      token: "ff38291d8a2fdffeda58e2e593e123f7",
+      category_id: 9637
     }
   ]
 
