@@ -20,7 +20,7 @@ defmodule RealtorBot.MixProject do
   def application do
     [
       mod: {RealtorBot.Application, []},
-      extra_applications: [:logger, :runtime_tools, :httpoison]
+      extra_applications: [:logger, :runtime_tools, :httpoison, :timex]
     ]
   end
 
@@ -47,7 +47,8 @@ defmodule RealtorBot.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:httpoison, "~> 1.7"}
+      {:httpoison, "~> 1.7"},
+      {:timex, "~> 3.6"}
     ]
   end
 

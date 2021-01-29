@@ -14,9 +14,10 @@ defmodule RealtorBot.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: RealtorBot.PubSub},
       # Start the Endpoint (http/https)
-      RealtorBotWeb.Endpoint
+      RealtorBotWeb.Endpoint,
       # Start a worker by calling: RealtorBot.Worker.start_link(arg)
       # {RealtorBot.Worker, arg}
+      RealtorBot.Crawler.ServerSupervisor
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
